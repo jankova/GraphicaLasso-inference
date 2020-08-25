@@ -1,10 +1,10 @@
 # GGMtests
 
-# Installation
+## Installation
 
 
-# Example
+## Example
 ```code```
-# Empirical experiments
+## Empirical experiments
 
-# References
+## References
