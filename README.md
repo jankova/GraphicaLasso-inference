@@ -2,6 +2,9 @@
 
 ## Installation
 
+## Graphical models
+
+## Methods
 
 ## Example
 ```code```
