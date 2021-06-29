@@ -10,13 +10,33 @@ library(devtools)
 install_github("jankova/GGMinference_R_package/GGMinference")
 ```
 
-## Graphical models
+<!---## Graphical models
 
-## Methods
+## Methods--->
 
-## Example
-```code```
-## Empirical experiments
+## Examples
+```
+# Inference for edge weights using data generated from a Gaussian graphical model
+library(MASS) 
+set.seed(1)
+
+p <- 100
+n <- 150
+rho <- 0.3
+
+Theta <- diag(p) + cbind(rho*diag(p)[,-1], rep(0,p)) + t(cbind(rho*diag(p)[,-1], rep(0,p)))
+X <- mvrnorm(n, rep(0,p), Sigma = solve(Theta))
+
+glasso.inference <- glasso.pvals(X, standardize = FALSE, alpha = 0.05, rho0 = sqrt(log(p)/n), pmethod = "BH", visual = FALSE)
+glasso.inference$p.values.adjusted
+
+nodelasso.inference <- nodelasso.pvals(X, standardize = FALSE, alpha = 0.05, visual = FALSE) 
+nodelasso.inference$p.values.adjusted
+
+precmat.inference <- precmat.pvals(X, standardize = FALSE, alpha = 0.05, pmethod = "BH", visual = FALSE)
+precmat.inference$p.values.adjusted
+
+```
 
 ## References
 
