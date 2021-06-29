@@ -3,7 +3,9 @@ Confidence intervals for edges in high-dimensional undirected Gaussian graphical
 
 ## Installation
 install.packages(devtools)
+
 library(devtools)
+
 install_github("jankova/GGMinference_R_package/GGMinference")
 
 ## Graphical models
