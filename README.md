@@ -1,5 +1,5 @@
 # GGMinference
-Confidence intervals for edges in high-dimensional undirected Gaussian graphical models and p-values for testing their significance. The confidence intervals and tests are based on a de-biased version of the graphical lasso [3] or the nodewise (neighbourhood) lasso [1]. For low-dimensional case, confidence intervals can be computed using the precision matrix estimator.
+The package provides confidence intervals for edges in high-dimensional undirected Gaussian graphical models and p-values for testing their significance. The confidence intervals and tests are based on a de-biased version of the graphical lasso [3] or the nodewise (neighbourhood) lasso [1]. For the low-dimensional case, confidence intervals can be computed using the precision matrix estimator.
 
 ## Installation
 ```
@@ -14,7 +14,10 @@ install_github("jankova/GGMinference_R_package/GGMinference")
 
 ## Methods--->
 
+
 ## Examples
+The following code demonstrates the usage on a data generated from a Gaussian graphical model with a tri-diagonal precision matrix.
+
 ```
 # Inference for edge weights using data generated from a Gaussian graphical model
 library(MASS) 
