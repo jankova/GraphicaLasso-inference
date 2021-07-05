@@ -16,7 +16,7 @@ install_github("jankova/GGMinference_R_package/GGMinference")
 
 
 ## Examples
-The following code demonstrates the usage on a data generated from a Gaussian graphical model with a tri-diagonal precision matrix.
+The following code demonstrates the usage on a dataset generated from a Gaussian graphical model with a tri-diagonal precision matrix.
 
 ```
 # Inference for edge weights using data generated from a Gaussian graphical model
