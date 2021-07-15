@@ -34,6 +34,7 @@ X <- mvrnorm(n, rep(0,p), Sigma = solve(Theta))
 glasso.inference <- glasso.pvals(X, standardize = FALSE, alpha = 0.05, rho0 = sqrt(log(p)/n), pmethod = "BH", visual = FALSE)
 glasso.inference$p.values.adjusted
 
+# p-values using the de-biased nodewise lasso
 nodelasso.inference <- nodelasso.pvals(X, standardize = FALSE, alpha = 0.05, visual = FALSE) 
 nodelasso.inference$p.values.adjusted
 
