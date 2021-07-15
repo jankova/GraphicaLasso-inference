@@ -38,6 +38,7 @@ glasso.inference$p.values.adjusted
 nodelasso.inference <- nodelasso.pvals(X, standardize = FALSE, alpha = 0.05, visual = FALSE) 
 nodelasso.inference$p.values.adjusted
 
+# p-values using the precision matrix estimator
 precmat.inference <- precmat.pvals(X, standardize = FALSE, alpha = 0.05, pmethod = "BH", visual = FALSE)
 precmat.inference$p.values.adjusted
 
