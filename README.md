@@ -30,6 +30,7 @@ rho <- 0.3
 Theta <- diag(p) + cbind(rho*diag(p)[,-1], rep(0,p)) + t(cbind(rho*diag(p)[,-1], rep(0,p)))
 X <- mvrnorm(n, rep(0,p), Sigma = solve(Theta))
 
+# p-values using the de-biased graphical lasso
 glasso.inference <- glasso.pvals(X, standardize = FALSE, alpha = 0.05, rho0 = sqrt(log(p)/n), pmethod = "BH", visual = FALSE)
 glasso.inference$p.values.adjusted
 
