@@ -3,7 +3,7 @@ The package provides confidence intervals for edges in high-dimensional undirect
 
 ## Installation
 ```
-install.packages(devtools)
+install.packages("devtools")
 
 library(devtools)
 
