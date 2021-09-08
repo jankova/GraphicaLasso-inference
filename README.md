@@ -8,6 +8,8 @@ install.packages("devtools")
 library(devtools)
 
 install_github("jankova/GGMinference_R_package/GGMinference")
+
+library(GGMinference)
 ```
 
 <!---## Graphical models
