@@ -1,4 +1,4 @@
-# GraphicalLasso-inference: Inference in high-dimensional graphical models
+# Inference in high-dimensional graphical models with the Graphical Lasso
 The package provides confidence intervals for edges in high-dimensional undirected Gaussian graphical models and p-values for testing their significance. For the high-dimensional case, confidence intervals and tests are based on a de-biased version of the graphical lasso [3] or the nodewise (neighbourhood) lasso [1]. For the low-dimensional case, confidence intervals can be computed using the precision matrix estimator.
 
 ## Installation
